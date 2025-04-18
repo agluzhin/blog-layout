@@ -18,3 +18,4 @@ This project devided to some special sections:
 ## Error 404
 ![image](https://github.com/user-attachments/assets/865eb396-5f23-47a3-a0d8-caba931bb7d3)
 
+Link to the figma mockup: https://www.figma.com/design/l47WOfIQYGb8xlLGubVx5E/Марафон-верстки-№3.-Блог-на-WordPress?node-id=0-1&p=f&t=2Br6VLFU0ZVavyFH-0.
