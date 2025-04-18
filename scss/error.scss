@@ -1,0 +1,58 @@
+@use "./stuff/fonts";
+@use "./stuff/reset";
+@use "./stuff/variables";
+@use "./blocks/container";
+@use "./blocks/header";
+@use "./blocks/footer";
+
+/* === Main restructure === */
+.main {
+	height: 100%;
+	padding: 125px 0;
+	background-color: var(--main-background);
+}
+
+.main__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+/* === Error block styles === */
+.main__error-message {
+	font-size: 30px;
+	text-align: center;
+	color: var(--primary-black);
+}
+
+.error-button {
+	padding: 10px 16px;
+	border-radius: 8px;
+	background-color: var(--primary-background);
+	border: none;
+}
+
+.error-button__link {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 18px;
+	color: var(--primary-blue);
+}
+
+/* === Adaptive layout */
+@media (max-width: 992px) {
+	.main {
+		padding: 34px 0;
+	}
+}
+@media (max-width: 470px) {
+	.main {
+		padding: 40px 0;
+	}
+	
+	.main__error-message {
+		font-size: 24px;
+	}
+}

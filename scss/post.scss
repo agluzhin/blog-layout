@@ -1,0 +1,141 @@
+@use "./stuff/fonts";
+@use "./stuff/reset";
+@use "./stuff/variables";
+
+@use "./blocks/container";
+@use "./blocks/header";
+@use "./blocks/footer";
+@use "./blocks/main";
+
+/* === Main restructure === */
+.main {
+	background-color: var(--default-white);
+}
+
+.main__content {
+	padding: 40px 0 100px 0;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	grid-template-rows: auto;
+	gap: 40px;
+}
+
+.main__hero-image {
+	grid-column: 1/3;
+	grid-row: 1/2;
+	height: 300px;
+	background-image: var(--post-main);
+	border-radius: 20px;
+}
+
+.post {
+	max-width: 800px;
+	display: grid;
+	grid-column: 1/2;
+	grid-row: 2/3;
+	gap: 30px;
+	color: var(--default-black);
+}
+
+.post__meta {
+	max-width: 210px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	text-wrap: nowrap;
+}
+
+.post__meta-category {
+	padding: 8px 16px;
+	border-radius: 8px;
+	color: var(--primary-blue);
+	background-color: var(--primary-background);
+}
+
+.post__meta-date {
+	color: var(--primary-black-trans);
+}
+
+.post__title {
+	font-size: 30px;
+}
+
+.post__text {
+	font-size: 18px;
+}
+
+.post__text_only, .post__text-block {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.post__text-block {
+	max-width: 440px;
+}
+
+.post__text_image {
+	display: flex;
+	gap: 40px;
+}
+
+.post__text-image-block {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.post__text-image-description {
+	font-size: 14px;
+}
+
+.post__end-image {
+	height: 303px;
+	background-image: var(--post-end);
+	background-repeat: no-repeat;
+}
+
+.post__pagination {
+	max-width: inherit;
+	display: flex;
+	justify-content: space-between;
+}
+
+.post__pagination-link {
+	padding: 10px 16px;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border-radius: 8px;
+	color: var(--primary-blue);
+	background-color: var(--primary-background);
+}
+
+.sidebar {
+	justify-self: self-end;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.sidebar__form {
+	background-color: var(--primary-grey);
+}
+
+.sidebar__form-email {
+	background-color: var(--default-white);
+}
+
+@media (max-width: 1200px) {
+	.post {
+		max-width: 100%;
+		grid-column: 1/3;
+	}
+
+	.sidebar {
+		grid-column: 1/3;
+		grid-row: 3/3;
+	}
+	
+}

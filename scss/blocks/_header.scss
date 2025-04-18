@@ -1,0 +1,106 @@
+/* === Basic header content */
+.header {
+	width: 100%;
+	padding: 11px 0;
+	background-color: var(--default-white);
+}
+
+.header__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	display: flex;
+	gap: 40px;
+
+	font-family: "Futura PT";
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.menu-link {
+	color: var(--primaty-black);
+}
+
+.menu-link.active {
+	text-decoration: underline;
+	color: var(--primary-blue);
+}
+
+.menu-link_phone {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.phone-number {
+	color: var(--primary-blue);
+}
+
+/* === Header burger menu === */
+.burger {
+	display: none;
+}
+
+/* === Header close button for "search" page === */
+.header__close-button {
+	display: none;
+}
+
+/* === Media queries === */
+@media (max-width: 767px) {
+	.header {
+		align-self: start;
+		position: sticky;
+		top: 0;
+	}
+
+	.burger {
+		display: block;
+		float: right;
+		cursor: pointer;
+		border: none;
+	}
+
+	.burger div {
+		width: 30px;
+		height: 3px;
+		background-color: var(--primary-black);
+		margin: 5px;
+		transition: 0.4s;
+	}
+
+	/* === Animation for burger menu === */
+	.burger.change div:nth-child(1) {
+		transform: rotate(-45deg) translate(-5px, 6px);
+	}
+
+	.burger.change div:nth-child(2) {
+		opacity: 0;
+	}
+
+	.burger.change div:nth-child(3) {
+		transform: rotate(45deg) translate(-5px, -6px);
+	}
+
+	/* === Drop down menu styles === */
+	.menu {
+		display: none;
+	}
+	
+	.menu.active {
+		padding: 20px 0;
+		width: 100%;
+		top: 70px;
+		left: 0;
+		right: 0;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+		background-color: var(--default-white);
+	}
+}

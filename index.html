@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="error404.html" class="header__logo-link"
+            ><img
+              class="header__logo"
+              src="img/header/logo.svg"
+              alt="logo-icon"
+          /></a>
+
+          <nav class="header__navigation">
+            <ul class="menu menu_burger">
+              <li class="menu-item">
+                <a href="index.html" class="menu-link">Главная</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">О нас</a>
+              </li>
+              <li class="menu-item">
+                <a href="contacts.html" class="menu-link">Контакты</a>
+              </li>
+              <li class="menu-item">
+                <a href="search.html" class="menu-link">Поиск</a>
+              </li>
+              <li class="menu-item">
+                <a
+                  href="tel:+7(987)887-87-88"
+                  class="menu-link menu-link_phone"
+                >
+                  <img
+                    class="phone-icon"
+                    src="img/header/phone_icon.svg"
+                    alt=""
+                  />
+                  <span class="phone-number">+7(987)887-87-88</span>
+                </a>
+              </li>
+            </ul>
+
+            <button class="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+          </nav>
+
+          <button class="header__close-button">
+            <a href="index.html" class="header__close-link">
+              <span class="header__close-text">Закрыть</span>
+              <img
+                src="img/main/close-icon.svg"
+                alt="close-icon"
+                class="close-icon"
+              />
+            </a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__hero-image"></div>
+      <div class="container">
+        <div class="main__content">
+          <div class="posts">
+            <a href="post.html" class="posts__item posts__item_big">
+              <div class="posts__item-meta">
+                <span class="posts__item-category">Категория 1</span>
+                <time datetime="13:12:2020" class="posts__item-date"
+                  >13 дек 2020</time
+                >
+              </div>
+              <div class="posts__item-information">
+                <p class="posts__item-title">
+                  Управление ИТ-активами – скучная рутина или творческая задача?
+                </p>
+                <p class="posts__item-description">
+                  Размышляя об управлении ИТ-активами, я вспомнил один учебный
+                  пример. Менеджер по ИТ-мощностям в крупной компании
+                  периодически готовил толстенный отчёт руководству. В очередной
+                  раз он не принёс отчёт, решив проверить, нужен ли он вообще.
+                </p>
+              </div>
+            </a>
+
+            <a href="post.html" class="posts__item posts__item_middle">
+              <div class="posts__item-meta">
+                <span class="posts__item-category">Категория 1</span>
+                <time datetime="13:12:2020" class="posts__item-date"
+                  >13 дек 2020</time
+                >
+              </div>
+              <div class="posts__item-information">
+                <p class="posts__item-title">
+                  Управление ИТ-активами – скучная рутина или творческая задача?
+                </p>
+                <p class="posts__item-description">
+                  Размышляя об управлении ИТ-активами, я вспомнил один учебный
+                  пример. Менеджер по ИТ-мощностям в крупной компании
+                  периодически готовил толстенный отчёт руководству. В очередной
+                  раз он не принёс отчёт, решив проверить, нужен ли он вообще.
+                </p>
+              </div>
+            </a>
+
+            <a href="category.html" class="posts__item category">
+              <div class="category__meta">
+                <span class="category__number">Категория 1</span>
+                <p class="category__title">
+                  ITAM&SAMDay – самая настоящая удача!
+                </p>
+              </div>
+              <time datetime="13:12:2020" class="category__date"
+                >13 дек 2020</time
+              >
+            </a>
+          </div>
+
+          <nav class="main__pagination pagination">
+            <ul class="pagination__menu">
+              <li class="pagination__menu-item">
+                <a href="#" class="pagination__menu-link">1</a>
+              </li>
+              <li class="pagination__menu-item">
+                <a href="#" class="pagination__menu-link">2</a>
+              </li>
+              <li class="pagination__menu-item">
+                <a href="#" class="pagination__menu-link">3</a>
+              </li>
+              <li class="pagination__menu-item">
+                <a href="#" class="pagination__menu-link">4</a>
+              </li>
+              <li class="pagination__menu-item">
+                <a href="#" class="pagination__menu-link">5</a>
+              </li>
+              <li class="pagination__menu-item">
+                <a href="#" class="pagination__menu-link">...</a>
+              </li>
+              <li class="pagination__menu-item">
+                <a href="#" class="pagination__menu-link">10</a>
+              </li>
+              <li class="pagination__menu-item pagination__menu-item_next">
+                <a
+                  href="#"
+                  class="pagination__menu-link pagination__menu-link_next"
+                  >Следующая</a
+                >
+                <img
+                  src="img/main/next.svg"
+                  alt="next-icon"
+                  class="next-icon"
+                />
+              </li>
+            </ul>
+          </nav>
+
+          <aside class="main__sidebar sidebar">
+            <p class="sidebar__title">Популярные новости</p>
+            <ul class="sidebar__menu">
+              <li class="sidebar__menu-item">
+                <a href="" class="sidebar__menu-link"
+                  >ITAM&SAMDay – самая настоящая удача!</a
+                >
+                <time datetime="13:12:2020" class="sidebar__menu-data"
+                  >13 дек 2020</time
+                >
+              </li>
+              <li class="sidebar__menu-splitter"></li>
+              <li class="sidebar__menu-item">
+                <a href="" class="sidebar__menu-link"
+                  >Секреты лицензирования. Всё, что вы хотели знать про
+                  Microsoft, SAP и Oracle, но не знали, у кого спросить ...</a
+                >
+                <time datetime="13:12:2020" class="sidebar__menu-data"
+                  >13 дек 2020</time
+                >
+              </li>
+              <li class="sidebar__menu-splitter"></li>
+              <li class="sidebar__menu-item">
+                <a href="" class="sidebar__menu-link"
+                  >Менеджмент XXI века. Надо ли готовиться к изменениям или мы
+                  давно уже должны были измениться?</a
+                >
+                <time datetime="13:12:2020" class="sidebar__menu-data"
+                  >13 дек 2020</time
+                >
+              </li>
+            </ul>
+
+            <form class="sidebar__form">
+              <label class="sidebar__form-title">Подписка на рассылку</label>
+              <div class="sidebar__form-subscribe">
+                <input
+                  type="text"
+                  class="sidebar__form-email"
+                  placeholder="example@gmail.com"
+                />
+                <button type="submit" class="sidebar__form-button">
+                  Подписаться
+                  <img src="img/main/submit-icon.svg" alt="submit-icon" />
+                </button>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <img src="img/footer/logo.svg" alt="logo" class="footer__logo" />
+      <ul class="menu menu_footer">
+        <li class="menu-item">
+          <a href="index.html" class="menu-link">Главная</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">О нас</a>
+        </li>
+        <li class="menu-item">
+          <a href="contacts.html" class="menu-link">Контакты</a>
+        </li>
+        <li class="menu-item">
+          <a href="search.html" class="menu-link">Поиск</a>
+        </li>
+      </ul>
+      <p class="licence">ООО “Организация” 2020. Все права защищены</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

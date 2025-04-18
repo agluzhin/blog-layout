@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+    <link rel="stylesheet" href="css/contacts.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="error404.html" class="header__logo-link"
+            ><img
+              class="header__logo"
+              src="img/header/logo.svg"
+              alt="logo-icon"
+          /></a>
+          <nav class="header__navigation">
+            <ul class="menu menu_burger">
+              <li class="menu-item">
+                <a href="index.html" class="menu-link">Главная</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">О нас</a>
+              </li>
+              <li class="menu-item">
+                <a href="contacts.html" class="menu-link">Контакты</a>
+              </li>
+              <li class="menu-item">
+                <a href="search.html" class="menu-link">Поиск</a>
+              </li>
+              <li class="menu-item">
+                <a
+                  href="tel:+7(987)887-87-88"
+                  class="menu-link menu-link_phone"
+                >
+                  <img
+                    class="phone-icon"
+                    src="img/header/phone_icon.svg"
+                    alt=""
+                  />
+                  <span class="phone-number">+7(987)887-87-88</span>
+                </a>
+              </li>
+            </ul>
+            <button class="burger">
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+          </nav>
+          <button class="header__close-button">
+            <a href="index.html" class="header__close-link">
+              <span class="header__close-text">Закрыть</span>
+              <img
+                src="img/main/close-icon.svg"
+                alt="close-icon"
+                class="close-icon"
+              />
+            </a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <div class="main__contacts contacts">
+            <p class="contacts__title">Контактная информация</p>
+            <a href="tel:+7(987)887-87-88" class="contacts__phone">
+              <img src="img/contacts/phone-icon.svg" alt="phone-icon" />
+              <p class="contacts__phone-number">+7(987)887-87-88</p>
+            </a>
+            <a href="#" class="contacts__adress">
+              <img src="img/contacts/adress-icon.svg" alt="adress-icon" />
+              <p class="contacts__adress-name">
+                г. Санкт-Петербург, ул. Ленина, 9, стр. 4
+              </p>
+            </a>
+            <ul class="contacts__socials socials">
+              <li class="socials__item">
+                <a href="#" class="socials__facebook-link">
+                  <img
+                    src="img/contacts/facebook-icon.svg"
+                    alt="facebook-icon"
+                  />
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__vk-link">
+                  <img src="img/contacts/vk-icon.svg" alt="vk-icon" />
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__instagram-link">
+                  <img
+                    src="img/contacts/instagram-icon.svg"
+                    alt="instagram-icon"
+                  />
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__twitter-link">
+                  <img src="img/contacts/twitter-icon.svg" alt="twitter-icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <form class="main__form">
+            <p class="main__form-title">Напишите нам</p>
+            <ul class="main__form-inputs inputs-menu">
+              <li class="inputs-menu__item">
+                <input
+                  type="text"
+                  class="inputs-menu__name"
+                  placeholder="Ваше имя"
+                />
+              </li>
+              <li class="inputs-menu__item">
+                <input
+                  type="email"
+                  class="inputs-menu__contacts"
+                  placeholder="Телефон или E-mail"
+                />
+              </li>
+              <li class="inputs-menu__item inputs-menu__item_message">
+                <textarea
+                  type="text"
+                  class="inputs-menu__message"
+                  placeholder="Сообщение..."
+                ></textarea>
+              </li>
+            </ul>
+            <button type="submit" class="main__form-button">
+              Отправить
+              <img src="img/contacts/button-icon.svg" alt="button-icon" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <img src="img/footer/logo.svg" alt="logo" />
+      <ul class="menu menu_footer">
+        <li class="menu-item">
+          <a href="index.html" class="menu-link">Главная</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">О нас</a>
+        </li>
+        <li class="menu-item">
+          <a href="contacts.html" class="menu-link">Контакты</a>
+        </li>
+        <li class="menu-item">
+          <a href="search.html" class="menu-link">Поиск</a>
+        </li>
+      </ul>
+      <p class="licence">ООО “Организация” 2020. Все права защищены</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

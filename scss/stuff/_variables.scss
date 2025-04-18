@@ -1,0 +1,28 @@
+:root {
+	/* ===== Colors ===== */
+	--default-white: rgba(255, 255, 255, 1);
+	--default-black: rgba(0, 0, 0, 1);
+
+	--primary-black: rgba(47, 34, 34, 1);
+	--primary-black-trans: rgba(47, 34, 34, 0.4);
+	--primary-black-trans-max: rgba(47, 34, 34, 0.1);
+	--primary-blue: rgba(93, 113, 221, 1);
+	--primary-grey: rgba(245, 245, 245, 1);
+	--primary-background: rgba(93, 113, 221, 0.05);
+
+	--main-background: rgba(249, 249, 249, 1);
+
+	--shadow-color: rgba(8, 24, 111, 0.2);
+	--post-category-background: rgba(247, 248, 253, 1);
+	--category-number-background: rgba(125, 141, 228, 1);
+	--sidebar-data: rgba(229, 228, 228, 1);
+
+	/* ===== Index.html page images ===== */
+	--default-hero: url('../img/main/hero.jpg');
+	--middle-hero: url('../img/main/hero-1024.jpg');
+	--small-hero: url('../img/main/hero-320.jpg');
+
+	/* ===== Post.html page images ===== */
+	--post-main: url('../img/posts/main.jpg');
+	--post-end: url('../img/posts/end.jpg');
+}
