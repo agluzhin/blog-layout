@@ -1,6 +1,8 @@
 # BLOG
 It is an adaptive layout which was made with technologies such as HTML, SCSS and JS.
 
+You can check up this project on my github pages: https://agluzhin.github.io/blog-layout/
+
 This project devided to some special sections:
 
 ## Home page
